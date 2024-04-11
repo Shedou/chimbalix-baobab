@@ -72,18 +72,18 @@ namespace Baobab {
         private unowned Gtk.TreeViewColumn time_modified_column;
         [GtkChild]
         private unowned Gtk.GestureClick treeview_right_click_gesture;
-        [GtkChild]
-        private unowned Gtk.Stack chart_stack;
-        [GtkChild]
-        private unowned Gtk.Stack spinner_stack;
-        [GtkChild]
-        private unowned Gtk.StackSwitcher chart_stack_switcher;
-        [GtkChild]
-        private unowned Chart rings_chart;
-        [GtkChild]
-        private unowned Chart treemap_chart;
-        [GtkChild]
-        private unowned Gtk.Spinner spinner;
+        //[GtkChild]
+        //private unowned Gtk.Stack chart_stack;
+        //[GtkChild]
+        //private unowned Gtk.Stack spinner_stack;
+        //[GtkChild]
+        //private unowned Gtk.StackSwitcher chart_stack_switcher;
+        //[GtkChild]
+        //private unowned Chart rings_chart;
+        //[GtkChild]
+        //private unowned Chart treemap_chart;
+        //[GtkChild]
+        //private unowned Gtk.Spinner spinner;
 
         private Location? active_location = null;
         private bool is_busy = false;
@@ -143,11 +143,11 @@ namespace Baobab {
 
             infobar_close_button.clicked.connect (() => { clear_message (); });
 
-            ui_settings.bind ("active-chart", chart_stack, "visible-child-name", SettingsBindFlags.DEFAULT);
-            chart_stack.destroy.connect (() => { Settings.unbind (chart_stack, "visible-child-name"); });
+            //ui_settings.bind ("active-chart", chart_stack, "visible-child-name", SettingsBindFlags.DEFAULT);
+            //chart_stack.destroy.connect (() => { Settings.unbind (chart_stack, "visible-child-name"); });
 
-            rings_chart.item_activated.connect (on_chart_item_activated);
-            treemap_chart.item_activated.connect (on_chart_item_activated);
+            //rings_chart.item_activated.connect (on_chart_item_activated);
+            //treemap_chart.item_activated.connect (on_chart_item_activated);
             pathbar.item_activated.connect (on_pathbar_item_activated);
             folder_display.activated.connect (on_folder_display_activated);
 
@@ -285,12 +285,12 @@ namespace Baobab {
 
             var about = new Adw.AboutWindow() {
                 transient_for = this,
-                application_name = _("Disk Usage Analyzer"),
+                application_name = _("Disk Usage Analyzer - modified for Chimbalix Linux"),
                 application_icon = "org.gnome.baobab",
                 developer_name = _("The GNOME Project"),
                 version = Config.VERSION,
                 website = "https://wiki.gnome.org/action/show/Apps/DiskUsageAnalyzer",
-                issue_url = "https://gitlab.gnome.org/GNOME/baobab/-/issues/new",
+                issue_url = "https://github.com/Shedou/chimbalix-baobab",
                 copyright = copyright,
                 license_type = Gtk.License.GPL_2_0,
                 developers = developers,
@@ -506,8 +506,8 @@ namespace Baobab {
                 return;
             }
 
-            rings_chart.tree_root = path;
-            treemap_chart.tree_root = path;
+            //rings_chart.tree_root = path;
+            //treemap_chart.tree_root = path;
             folder_display.path = path;
             pathbar.path = path;
 
@@ -537,14 +537,14 @@ namespace Baobab {
 
             if (busy) {
                 new_cursor = busy_cursor;
-                chart_stack_switcher.sensitive = false;
-                spinner_stack.visible_child = spinner;
-                spinner.start ();
+                //chart_stack_switcher.sensitive = false;
+                //spinner_stack.visible_child = spinner;
+                //spinner.start ();
                 pathbar.sensitive = false;
             } else {
-                spinner.stop ();
-                spinner_stack.visible_child = chart_stack;
-                chart_stack_switcher.sensitive = true;
+                //spinner.stop ();
+                //spinner_stack.visible_child = chart_stack;
+                //chart_stack_switcher.sensitive = true;
                 pathbar.sensitive = true;
             }
 
@@ -595,10 +595,10 @@ namespace Baobab {
             }
         }*/
 
-        void set_chart_location (Location location) {
-            rings_chart.location = location;
-            treemap_chart.location = location;
-        }
+        //void set_chart_location (Location location) {
+        //    rings_chart.location = location;
+        //    treemap_chart.location = location;
+        //}
 
         void scanner_completed () {
             var scanner = active_location.scanner;
@@ -626,7 +626,7 @@ namespace Baobab {
             }
 
             reroot_treeview (new Gtk.TreePath.first ());
-            set_chart_location (active_location);
+            //set_chart_location (active_location);
             set_ui_state (result_page, false);
 
             // Make sure to update the folder display after the scan
