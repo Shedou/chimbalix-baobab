@@ -1,0 +1,631 @@
+# Esperanto translation for baobab.
+# Copyright (C) 2009 Free Software Foundation, Inc.
+# This file is distributed under the same license as the baobab package.
+# Kevin SCHAEFER <lugubrili@hotmail.com>, 2009.
+# Michael MORONI <haikara90@gmail.com >, 2009.
+# Tiffany ANTOPOLSKI <tiffany.antopolski@gmail.com>, 2012.
+# Ryan LORTIE <desrt@desrt.ca>, 2013.
+# Daniel PUENTES <blatberk@openmailbox.org>, 2015.
+# Kristjan SCHMIDT <kristjan.schmidt@googlemail.com>, 2010, 2011, 2012, 2015, 2017.
+msgid ""
+msgstr ""
+"Project-Id-Version: baobab master\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/baobab/issues\n"
+"POT-Creation-Date: 2020-04-20 13:22+0000\n"
+"PO-Revision-Date: 2020-05-04 19:27+0100\n"
+"Last-Translator: Carmen Bianca BAKKER <carmen@carmenbianca.eu>\n"
+"Language-Team: Esperanto <gnome-eo-list@gnome.org>\n"
+"Language: eo\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 2.3\n"
+"X-Project-Style: gnome\n"
+
+#: data/org.gnome.baobab.appdata.xml.in:6 data/org.gnome.baobab.desktop.in:3
+#: src/baobab-main-window.ui:120 src/baobab-window.vala:310
+msgid "Disk Usage Analyzer"
+msgstr "Diskuzada analizilo"
+
+#: data/org.gnome.baobab.appdata.xml.in:7 data/org.gnome.baobab.desktop.in:4
+msgid "Check folder sizes and available disk space"
+msgstr "Kontroli dosierujajn grandojn kaj disponeblan diskmemoron"
+
+#: data/org.gnome.baobab.appdata.xml.in:9
+msgid ""
+"A simple application to keep your disk usage and available space under "
+"control."
+msgstr ""
+"Facila aplikaĵo por kontroli la uzadon kaj disponeblan spacon de via diskoj."
+
+#: data/org.gnome.baobab.appdata.xml.in:12
+msgid ""
+"Disk Usage Analyzer can scan specific folders, storage devices and online "
+"accounts. It provides both a tree and a graphical representation showing the "
+"size of each folder, making it easy to identify where disk space is wasted."
+msgstr ""
+"Diskuzada analizilo povas skani specifajn dosierujojn, datumportilojn, kaj "
+"retajn kontojn. Ĝi provizas arban kaj diagraman prezenton de grando de ĉiu "
+"dosierujo, kiu faciligas identigon de malŝparata diskospaco."
+
+#: data/org.gnome.baobab.appdata.xml.in:34
+msgid "The GNOME Project"
+msgstr "La Projekto GNOME"
+
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: data/org.gnome.baobab.desktop.in:6
+msgid "storage;space;cleanup;"
+msgstr "spaco;diskospaco;purigi;senrubigi;"
+
+#: data/org.gnome.baobab.gschema.xml:9
+msgid "Excluded partitions URIs"
+msgstr "Eksigitaj subdiskaj URI-oj"
+
+#: data/org.gnome.baobab.gschema.xml:10
+msgid "A list of URIs for partitions to be excluded from scanning."
+msgstr "Listo de URI-oj por subdiskoj eksigitaj de skani."
+
+#: data/org.gnome.baobab.gschema.xml:20
+msgid "Active Chart"
+msgstr "Aktiva Diagramo"
+
+#: data/org.gnome.baobab.gschema.xml:21
+msgid "Which type of chart should be displayed."
+msgstr "Kia diagramo devus montriĝi."
+
+#: data/org.gnome.baobab.gschema.xml:25
+msgid "Window size"
+msgstr "Fenestra grando"
+
+#: data/org.gnome.baobab.gschema.xml:26
+msgid "The initial size of the window"
+msgstr "La komenca grando de la fenestro"
+
+#: data/org.gnome.baobab.gschema.xml:30
+msgid "Window state"
+msgstr "Fenestra stato"
+
+#: data/org.gnome.baobab.gschema.xml:31
+msgid "The GdkWindowState of the window"
+msgstr "La GdkWindowState de la fenestro"
+
+#: src/baobab-application.vala:30
+msgid "Print version information and exit"
+msgstr "Montri versian informon kaj ĉesi"
+
+#: src/baobab-cellrenderers.vala:91
+#, c-format
+msgid "%d item"
+msgid_plural "%d items"
+msgstr[0] "%d elemento"
+msgstr[1] "%d elementoj"
+
+#. Translators: when the last modified time is unknown
+#: src/baobab-cellrenderers.vala:101 src/baobab-location-list.vala:79
+msgid "Unknown"
+msgstr "Nekonate"
+
+#. Translators: when the last modified time is today
+#: src/baobab-cellrenderers.vala:110
+msgid "Today"
+msgstr "Hodiaŭ"
+
+#. Translators: when the last modified time is "days" days ago
+#: src/baobab-cellrenderers.vala:114
+#, c-format
+msgid "%lu day"
+msgid_plural "%lu days"
+msgstr[0] "%lu tago"
+msgstr[1] "%lu tagoj"
+
+#. Translators: when the last modified time is "months" months ago
+#: src/baobab-cellrenderers.vala:118
+#, c-format
+msgid "%lu month"
+msgid_plural "%lu months"
+msgstr[0] "%lu monato"
+msgstr[1] "%lu monatoj"
+
+#. Translators: when the last modified time is "years" years ago
+#: src/baobab-cellrenderers.vala:122
+#, c-format
+msgid "%lu year"
+msgid_plural "%lu years"
+msgstr[0] "%lu jaro"
+msgstr[1] "%lu jaroj"
+
+#: src/baobab-location-list.ui:17
+msgid "This Computer"
+msgstr "Ĉi tiu komputilo"
+
+#: src/baobab-location-list.ui:47
+msgid "Remote Locations"
+msgstr "Foraj lokoj"
+
+#: src/baobab-location-list.vala:66
+#, c-format
+msgid "%s Total"
+msgstr "%s entute"
+
+#: src/baobab-location-list.vala:70
+#, c-format
+msgid "%s Available"
+msgstr "%s disponebla"
+
+#. useful for some remote mounts where we don't know the
+#. size but do have a usage figure
+#: src/baobab-location-list.vala:84
+#, c-format
+msgid "%s Used"
+msgstr "%s uzata"
+
+#: src/baobab-location-list.vala:86
+msgid "Unmounted"
+msgstr "Ne surmetita"
+
+#: src/baobab-location.vala:73
+msgid "Home folder"
+msgstr "Hejmdosierujo"
+
+#: src/baobab-location.vala:113
+msgid "Computer"
+msgstr "Komputilo"
+
+#: src/baobab-main-window.ui:7
+msgid "Scan Folder…"
+msgstr "Skani dosierujon…"
+
+#: src/baobab-main-window.ui:13
+msgid "Keyboard _Shortcuts"
+msgstr "_Klavkombinoj"
+
+#: src/baobab-main-window.ui:17
+msgid "_Help"
+msgstr "_Helpo"
+
+#: src/baobab-main-window.ui:21
+msgid "_About Disk Usage Analyzer"
+msgstr "_Pri diskuzada analizilo"
+
+#: src/baobab-main-window.ui:34 src/menus.ui:7
+msgid "_Open Folder"
+msgstr "Malfermi d_osierujon"
+
+#: src/baobab-main-window.ui:43 src/menus.ui:11
+msgid "_Copy Path to Clipboard"
+msgstr "_Kopii vojon al tondejo"
+
+#: src/baobab-main-window.ui:52 src/menus.ui:15
+msgid "Mo_ve to Trash"
+msgstr "Mo_vi rubujen"
+
+#: src/baobab-main-window.ui:184
+msgid "Close"
+msgstr "Malfermi"
+
+#: src/baobab-main-window.ui:239
+msgid "Folder"
+msgstr "Dosierujo"
+
+#: src/baobab-main-window.ui:266
+msgid "Size"
+msgstr "Grando"
+
+#: src/baobab-main-window.ui:286
+msgid "Contents"
+msgstr "Enhavoj"
+
+#: src/baobab-main-window.ui:304
+msgid "Modified"
+msgstr "Ŝanĝita"
+
+#: src/baobab-main-window.ui:349
+msgid "Rings Chart"
+msgstr "Ringa diagramo"
+
+#: src/baobab-main-window.ui:361
+msgid "Treemap Chart"
+msgstr "Arbomapa diagramo"
+
+#: src/baobab-window.vala:215
+msgid "Select Folder"
+msgstr "Elekti dosierujon"
+
+#: src/baobab-window.vala:217
+msgid "_Cancel"
+msgstr "_Nuligi"
+
+#: src/baobab-window.vala:218
+msgid "_Open"
+msgstr "_Malfermi"
+
+#: src/baobab-window.vala:224
+msgid "Recursively analyze mount points"
+msgstr "Rikure analizi surmetingojn"
+
+#: src/baobab-window.vala:259
+msgid "Could not analyze volume."
+msgstr "Ne povis analizi portilon."
+
+#: src/baobab-window.vala:291
+msgid "Failed to show help"
+msgstr "Malsukcesis montri helpon"
+
+#: src/baobab-window.vala:313
+msgid "A graphical tool to analyze disk usage."
+msgstr "Grafika ilo por analizi diskuzadon."
+
+#: src/baobab-window.vala:319
+msgid "translator-credits"
+msgstr ""
+"Kevin SCHAEFER\n"
+"Michael MORONI\n"
+"Tiffany ANTOPOLSKI\n"
+"Ryan LORTIE\n"
+"Kristjan SCHMIDT\n"
+"Daniel PUENTES\n"
+"Carmen Bianca BAKKER <carmen@carmenbianca.eu>"
+
+#: src/baobab-window.vala:381
+msgid "Failed to open file"
+msgstr "Malsukcesis malfermi dosieron"
+
+#: src/baobab-window.vala:401
+msgid "Failed to move file to the trash"
+msgstr "Malsukcesis movi dosieron al la rubujo"
+
+#: src/baobab-window.vala:505
+msgid "Devices & Locations"
+msgstr "Aparatoj & lokoj"
+
+#: src/baobab-window.vala:567
+#, c-format
+msgid "Could not scan folder “%s”"
+msgstr "Ne eblis skani la dosierujon “%s”"
+
+#: src/baobab-window.vala:570
+#, c-format
+msgid "Could not scan some of the folders contained in “%s”"
+msgstr "Ne eblis skani kelkajn dosierujon kiuj estas en “%s”"
+
+#: src/baobab-window.vala:589
+msgid "Could not detect occupied disk sizes."
+msgstr "Ne povis detekti efektivan diskan uzadon."
+
+#: src/baobab-window.vala:589
+msgid "Apparent sizes are shown instead."
+msgstr "Ŝajnaj grandoj montratas anstataŭ."
+
+#: src/baobab-window.vala:593
+msgid "Scan completed"
+msgstr "Plenumis skanon"
+
+#: src/baobab-window.vala:594
+#, c-format
+msgid "Completed scan of “%s”"
+msgstr "Plenumis skanon de “%s”"
+
+#. || is_virtual_filesystem ()
+#: src/baobab-window.vala:612 src/baobab-window.vala:618
+#, c-format
+msgid "“%s” is not a valid folder"
+msgstr "“%s” ne estas valida dosierujo"
+
+#: src/baobab-window.vala:613 src/baobab-window.vala:619
+msgid "Could not analyze disk usage."
+msgstr "Ne povis analizi diskon uzadon."
+
+#: src/help-overlay.ui:13
+msgctxt "shortcut window"
+msgid "General"
+msgstr "Ĝenerala"
+
+#: src/help-overlay.ui:18
+msgctxt "shortcut window"
+msgid "Show / Hide primary menu"
+msgstr "Montri / kaŝi ĉefan menuon"
+
+#: src/help-overlay.ui:25
+msgctxt "shortcut window"
+msgid "Rescan current location"
+msgstr "Reskani aktualan lokon"
+
+#: src/help-overlay.ui:32
+msgctxt "shortcut window"
+msgid "Scan folder"
+msgstr "Skani dosierujon"
+
+#: src/help-overlay.ui:38
+msgctxt "shortcut window"
+msgid "Show Keyboard Shortcuts"
+msgstr "Montri klavkombinojn"
+
+#: src/help-overlay.ui:46
+msgctxt "shortcut window"
+msgid "Go back to location list"
+msgstr "Reen al lokolisto"
+
+#: src/help-overlay.ui:52
+msgctxt "shortcut window"
+msgid "Quit"
+msgstr "Ĉesi"
+
+#: src/menus.ui:21
+msgid "Go to _parent folder"
+msgstr "Iri al ge_patra dosierujo"
+
+#: src/menus.ui:27
+msgid "Zoom _in"
+msgstr "_Zomi"
+
+#: src/menus.ui:31
+msgid "Zoom _out"
+msgstr "_Malzomi"
+
+#~| msgid "Baobab"
+#~ msgid "baobab"
+#~ msgstr "baobab"
+
+#~ msgid "Baobab"
+#~ msgstr "Baobabo"
+
+#~ msgid "_About"
+#~ msgstr "_Pri"
+
+#~ msgid ""
+#~ "A simple application which can scan either specific folders (local or "
+#~ "remote) or volumes and give a graphical representation including each "
+#~ "directory size or percentage."
+#~ msgstr ""
+#~ "Simpla aplikaĵo, kiu povas skani aŭ specifajn dosierujojn aŭ "
+#~ "datumportilojn, kaj doni grafikan prezenton, kiu havas enhavas ĉiun "
+#~ "dosierujo-grandon aŭ elcenton."
+
+#~ msgid "Scan Remote Folder…"
+#~ msgstr "Skani foran dosierujon…"
+
+#~ msgid "Disk Usage Analyzer Preferences"
+#~ msgstr "Agordoj por diskuzada analizilo"
+
+#~ msgid "_Monitor changes to your home folder"
+#~ msgstr "_Kontroli ŝanĝojn en via hejma dosierujo"
+
+#~ msgid "Monitor Home"
+#~ msgstr "Kontroli hejmo"
+
+#~ msgid "Toolbar is Visible"
+#~ msgstr "Ilobreto estas videble"
+
+#~ msgid "Whether the toolbar should be visible in main window."
+#~ msgstr "Ĉu la ilobreto estu videbla en la ĉefa fenestro?"
+
+#~ msgid "Statusbar is Visible"
+#~ msgstr "Statobreto estas videble"
+
+#~ msgid ""
+#~ "Whether the status bar at the bottom of main window should be visible."
+#~ msgstr "Ĉu la statobreto ĉe la malsupro de la ĉefa fenestro estu videbla?"
+
+#~ msgid "_Analyzer"
+#~ msgstr "_Analizilo"
+
+#~ msgid "Scan _Filesystem"
+#~ msgstr "Skani _dosiersistemon"
+
+#~ msgid "_Edit"
+#~ msgstr "R_edakti"
+
+#~ msgid "_Expand All"
+#~ msgstr "_Etendi ĉiujn"
+
+#~ msgid "_Collapse All"
+#~ msgstr "_Maletendi ĉiujn"
+
+#~ msgid "_View"
+#~ msgstr "_Vido"
+
+#~ msgid "_Toolbar"
+#~ msgstr "Ilobre_to"
+
+#~ msgid "St_atusbar"
+#~ msgstr "St_atobreto"
+
+#~ msgid "All_ocated Space"
+#~ msgstr "_Apartigita spaco"
+
+#~ msgid "_Contents"
+#~ msgstr "_Enhavoj"
+
+#~ msgid "Scan your home folder"
+#~ msgstr "Skani vian hejmdosjerujon"
+
+#~ msgid "Scan the file system"
+#~ msgstr "Skani la dosiersistemon"
+
+#~ msgid "Scan File System"
+#~ msgstr "Skani dosiersistemon"
+
+#~ msgid "Scan Folder"
+#~ msgstr "Skani dosierujon"
+
+#~ msgid "Scan a remote folder or file system"
+#~ msgstr "Skani foran dosierujon aŭ dosiersistemon"
+
+#~ msgid "Scan Remote Folder"
+#~ msgstr "Skani foran dosierujon"
+
+#~ msgid "Stop scanning"
+#~ msgstr "Haltigi skanon"
+
+#~ msgid "Refresh"
+#~ msgstr "Aktualigi"
+
+#~ msgid "Scanning…"
+#~ msgstr "Skanante…"
+
+#~ msgid "used:"
+#~ msgstr "uzate:"
+
+#~ msgid "available:"
+#~ msgstr "disponeble:"
+
+#~ msgid "Ready"
+#~ msgstr "Preta"
+
+#~ msgid "Could not initialize monitoring"
+#~ msgstr "Ne eblis pravalorizi monitoradon"
+
+#~ msgid "Show version"
+#~ msgstr "Montri version"
+
+#~ msgid "[DIRECTORY]"
+#~ msgstr "[DOSIERUJO]"
+
+#~ msgid "Save screenshot"
+#~ msgstr "Konservi ekrankopion"
+
+#~ msgid "Cannot create pixbuf image!"
+#~ msgstr "Ne eblas krei \"pixbuf\"-bildon!"
+
+#~ msgid "_Image type:"
+#~ msgstr "_Bildtipo:"
+
+#~ msgid "Scan"
+#~ msgstr "Skani"
+
+#~ msgid "Device"
+#~ msgstr "Aparato"
+
+#~ msgid "Mount Point"
+#~ msgstr "Surmetingo"
+
+#~ msgid "File System Type"
+#~ msgstr "Dosiersistem-tipo"
+
+#~ msgid "Total Size"
+#~ msgstr "Tuta grando"
+
+#~ msgid "Cannot scan location \"%s\""
+#~ msgstr "Ne eblas skani lokon \"%s\""
+
+#~ msgid "SSH"
+#~ msgstr "SSH"
+
+#~ msgid "Public FTP"
+#~ msgstr "Publika FTP"
+
+#~ msgid "FTP (with login)"
+#~ msgstr "FTP (per ensaluto)"
+
+#~ msgid "WebDAV (HTTP)"
+#~ msgstr "WebDAV (HTTP)"
+
+#~ msgid "Secure WebDAV (HTTPS)"
+#~ msgstr "Sekura WebDAV (HTTPS)"
+
+#~ msgid "Cannot Connect to Server. You must enter a name for the server."
+#~ msgstr "Ne povas Konekti al Servilo. Vi devas tajpi nomon por la servilo."
+
+#~ msgid "Please enter a name and try again."
+#~ msgstr "Bonvolu entajpi nomon kaj provu denove."
+
+#~ msgid "_Location (URI):"
+#~ msgstr "_Loko (URI):"
+
+#~ msgid "_Server:"
+#~ msgstr "_Servilo:"
+
+#~ msgid "Optional information:"
+#~ msgstr "Opcia informo:"
+
+#~ msgid "_Share:"
+#~ msgstr "_Komunigi:"
+
+#~ msgid "_Port:"
+#~ msgstr "_Pordo:"
+
+#~ msgid "_Folder:"
+#~ msgstr "_Dosierujo:"
+
+#~ msgid "_User Name:"
+#~ msgstr "_Uzantonomo:"
+
+#~ msgid "_Domain Name:"
+#~ msgstr "_Domajnnomo:"
+
+#~ msgid "Connect to Server"
+#~ msgstr "Konekti al servilo"
+
+#~ msgid "Service _type:"
+#~ msgstr "Servo_tipo:"
+
+#~ msgid "_Scan"
+#~ msgstr "_Skani"
+
+#~ msgid "Rescan your home folder?"
+#~ msgstr "Ĉu skani vian hejmdosjerujon denove?"
+
+#~ msgid "_Rescan"
+#~ msgstr "_Reskani"
+
+#~ msgid "Usage"
+#~ msgstr "Uzado"
+
+#~ msgid "_Show hidden folders"
+#~ msgstr "_Montri kaŝitajn doserujojn"
+
+#~ msgid "There is no installed viewer capable of displaying the folder."
+#~ msgstr "Ne enhavas vidigilon kapabla vidigi ĉi dosierujon."
+
+#~ msgid "Could not move \"%s\" to the Trash"
+#~ msgstr "Ne eblis movi \"%s\"-on en rubujon"
+
+#~ msgid "Details: %s"
+#~ msgstr "Detaloj: %s"
+
+#~ msgid "There was an error displaying help."
+#~ msgstr "Okazis eraro dum montrado de helpo."
+
+#~ msgid ""
+#~ "This program is free software; you can redistribute it and/or modify it "
+#~ "under the terms of the GNU General Public License as published by the "
+#~ "Free Software Foundation; either version 2 of the License, or (at your "
+#~ "option) any later version."
+#~ msgstr ""
+#~ "Tiu programo estas libera programo; vi povas distribui ĝin kaj/aŭ modifi "
+#~ "ĝin laŭ la termoj de la Ĝenerala Publika Permesilo de GNU kiel elsendita "
+#~ "de la Free Software Foundation; aŭ dua versio de la permesilo aŭ "
+#~ "(laŭvole) iu-ajn posta versio."
+
+#~ msgid ""
+#~ "This program is distributed in the hope that it will be useful, but "
+#~ "WITHOUT ANY WARRANTY; without even the implied warranty of "
+#~ "MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General "
+#~ "Public License for more details."
+#~ msgstr ""
+#~ "Tiu programo estas distribuite kun la espero ke ĝi estos utila, sed SEN "
+#~ "IA AJN GARANTIO; eĉ sen la implica garantio de NEGOCEBLO aŭ ADAPTADO AL "
+#~ "IU APARTA CELO. Vidu la Ĝeneralan Publikan Permesilon de GNU por pli da "
+#~ "detaloj."
+
+#~ msgid ""
+#~ "You should have received a copy of the GNU General Public License along "
+#~ "with this program; if not, write to the Free Software Foundation, Inc., "
+#~ "51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA"
+#~ msgstr ""
+#~ "Vi devintus ricevi kopion de la Ĝenerala Publika Permesilo de GNU kune "
+#~ "kun ĉi tiu programo; se ne, skribu al la Free Software Foundation, Inc., "
+#~ "51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, Usono."
+
+#~ msgid "The document does not exist."
+#~ msgstr "La dokumento ne ekzistas."
+
+#~ msgid "The folder does not exist."
+#~ msgstr "La dosierujo ne ekzistas."
+
+#~ msgid "S_can Remote Folder..."
+#~ msgstr "S_kani foran dosierujon..."
+
+#~ msgid "Scan F_older..."
+#~ msgstr "Skani d_osierujon..."

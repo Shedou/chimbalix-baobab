@@ -1,0 +1,128 @@
+.cell.baobab-level-cell,
+.cell.baobab-level-cell:hover,
+.cell.baobab-level-cell:selected,
+.cell.baobab-level-cell:selected:hover {
+    border-color: darker(@borders);
+    border-width: 1px;
+    border-radius: 3px;
+    border-style: solid;
+    padding: 1px;
+    background-color: white;
+}
+
+.cell.baobab-level-cell.fill-block,
+.cell.baobab-level-cell.fill-block:hover,
+.cell.baobab-level-cell.fill-block:selected,
+.cell.baobab-level-cell.fill-block:selected:hover {
+    background-color: #edd400;
+}
+
+.cell.baobab-level-cell.fill-block.level-low,
+.cell.baobab-level-cell.fill-block.level-low:hover {
+    background-color: #73d216;
+}
+
+.cell.baobab-level-cell.fill-block.level-high,
+.cell.baobab-level-cell.fill-block.level-high:hover {
+    background-color: #cc0000;
+}
+
+.cell.baobab-level-cell.fill-block:backdrop,
+.cell.baobab-level-cell.fill-block:hover:backdrop,
+.cell.baobab-level-cell.fill-block.level-low:backdrop,
+.cell.baobab-level-cell.fill-block.level-high:backdrop {
+    background-color: @theme_unfocused_text_color;
+}
+
+.cell.baobab-cell-error {
+    color: @error_color;
+}
+
+.cell.baobab-cell-warning {
+    color: @warning_color;
+}
+
+.cell.baobab-cell-warning:selected,
+.cell.baobab-cell-error:selected {
+    color: @theme_selected_fg_color;
+}
+
+.cell.baobab-cell-warning:backdrop,
+.cell.baobab-cell-error:backdrop,
+.cell.baobab-cell-warning:selected:backdrop,
+.cell.baobab-cell-error:selected:backdrop {
+    color: @theme_unfocused_text_color;
+}
+
+/* FolderDisplay */
+window.background stack > grid > frame border {
+    border-width: 0 1px 1px 0;
+}
+
+/* regular TreeView */
+window.background stack > grid > scrolledwindow.frame {
+    border-width: 0 1px 0 0;
+}
+
+window.background stack treeview:hover:not(:selected) {
+    background: @theme_bg_color;
+}
+
+.pathbar {
+    border: solid 1px @borders;
+    border-radius: 5px;
+    background: @theme_bg_color;
+}
+
+.pathbar button {
+    margin: 0;
+    border-radius: 0px;
+    box-shadow: 1px 0px @borders;
+}
+
+.pathbar button:first-child {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+window infobar.warning,
+window infobar.error {
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: @borders;
+}
+
+@define-color color_0 #e01b24;
+@define-color color_1 #ff7800;
+@define-color color_2 #f6d32d;
+@define-color color_3 #33d17a;
+@define-color color_4 #3584e4;
+@define-color color_5 #9141ac;
+
+@define-color level_color #d3d6d1;
+@define-color level_color_hi #e0e2dd;
+
+@define-color chart_borders darker(@borders);
+.chart-grid:not(:dir(rtl)) {
+  box-shadow: 1px 0px inset @chart_borders;
+}
+
+.chart-grid:dir(rtl) {
+  box-shadow: -1px 0px inset @borders;
+}
+
+
+@define-color tooltip_bg_color rgba(0, 0, 0, 0.8);
+ringschart.subfolder-tip {
+    color: white;
+    background-color: @tooltip_bg_color;
+    border-radius: 3px;
+    padding: 3px 3px 3px 3px;
+}
+
+:drop(active) .contents {
+  outline-style: solid;
+  outline-width: 3px;
+  outline-color: alpha(@accent_bg_color, 0.5);
+  outline-offset: -3px;
+}

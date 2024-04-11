@@ -1,0 +1,35 @@
+Source: baobab
+Section: gnome
+Priority: optional
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Uploaders: @GNOME_TEAM@
+Build-Depends: appstream-util,
+               debhelper-compat (= 13),
+               dh-sequence-gnome,
+               itstool,
+               libadwaita-1-dev (>= 1.2~alpha),
+               libgirepository1.0-dev,
+               libglib2.0-dev (>= 2.40),
+               libgtk-4-dev (>= 4.4.0),
+               meson (>= 0.50.0),
+               valac (>= 0.25.1)
+Rules-Requires-Root: no
+Standards-Version: 4.6.1
+Vcs-Git: https://salsa.debian.org/gnome-team/baobab.git
+Vcs-Browser: https://salsa.debian.org/gnome-team/baobab
+Homepage: https://wiki.gnome.org/Apps/Baobab
+
+Package: baobab
+Architecture: any
+Depends: ${misc:Depends},
+         ${shlibs:Depends}
+Recommends: yelp
+Description: GNOME disk usage analyzer
+ Disk Usage Analyzer is a graphical, menu-driven application to analyse
+ disk usage in a GNOME environment. It can easily scan either the whole
+ filesystem tree, or a specific user-requested directory branch (local or
+ remote).
+ .
+ It also auto-detects in real-time any changes made to your home
+ directory as far as any mounted/unmounted device. Disk Usage Analyzer
+ also provides a full graphical treemap window for each selected folder.
