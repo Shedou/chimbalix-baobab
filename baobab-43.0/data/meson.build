@@ -8,12 +8,8 @@ resources = gnome.compile_resources('org.gnome.baobab', resource_files, c_name: 
 
 install_man ('baobab.1')
 
-desktop_file = i18n.merge_file(
-  input: 'org.gnome.baobab.desktop.in',
-  output: 'org.gnome.baobab.desktop',
-  type: 'desktop',
-  po_dir: '../po',
-  install: true,
+install_data (
+  'org.gnome.baobab.desktop',
   install_dir: join_paths(get_option('datadir'), 'applications'),
 )
 
