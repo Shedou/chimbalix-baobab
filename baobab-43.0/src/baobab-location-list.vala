@@ -64,11 +64,11 @@ namespace Baobab {
             total_size_label.hide();
             if (location.volume != null || location.mount != null || location.is_main_volume) {
                 if (location.size != null) {
-                    total_size_label.label = _("%s Total").printf (format_size (location.size));
+                    total_size_label.label = _("%s Total").printf (format_size (location.size, IEC_UNITS));
                     total_size_label.show();
 
                     if (location.used != null) {
-                        available_label.label = _("%s Available").printf (format_size (location.size - location.used));
+                        available_label.label = _("%s Available").printf (format_size (location.size - location.used, IEC_UNITS));
 
                         usage_bar.max_value = location.size;
 
@@ -82,7 +82,7 @@ namespace Baobab {
                 } else if (location.used != null) {
                     // useful for some remote mounts where we don't know the
                     // size but do have a usage figure
-                    available_label.label = _("%s Used").printf (format_size (location.used));
+                    available_label.label = _("%s Used").printf (format_size (location.used, IEC_UNITS));
                 } else if (location.volume != null && location.mount == null && location.volume.can_mount ()) {
                     available_label.label = _("Unmounted");
                 }

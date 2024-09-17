@@ -121,7 +121,7 @@ namespace Baobab {
 
         public new uint64 size {
             set {
-                text = (state != Scanner.State.ERROR ? format_size (value) : "");
+                text = (state != Scanner.State.ERROR ? format_size (value, IEC_UNITS) : "");
             }
         }
     }

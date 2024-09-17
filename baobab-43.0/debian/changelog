@@ -1,3 +1,9 @@
+baobab (43.0-1-cl2) unstable; urgency=medium
+
+  * Units have been converted to IEC standard (1024 instead of 1000)
+
+ -- Chimbal <chimbalix@gmail.com>  Tue, 17 Sep 2024 10:30:00 +0400
+
 baobab (43.0-1-cl1) unstable; urgency=medium
 
   * Version fix

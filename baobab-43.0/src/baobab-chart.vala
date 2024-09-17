@@ -295,7 +295,7 @@ namespace Baobab {
 
             var item = create_new_chartitem ();
             item.name = format_name (display_name, name);
-            item.size = format_size (size);
+            item.size = format_size (size, IEC_UNITS);
             item.depth = depth;
             item.rel_start = rel_start;
             item.rel_size = rel_size;
