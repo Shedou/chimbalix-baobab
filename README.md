@@ -2,7 +2,11 @@
 
 A modified version of the Baobab disk usage analyzer for Chimbalix Linux.
 
-|![2024-04-11_-_23-24-55](https://github.com/Shedou/chimbalix-baobab/assets/19572158/1080c53b-be3e-4152-9bba-b01538584462)|![2024-04-11_-_23-20-52](https://github.com/Shedou/chimbalix-baobab/assets/19572158/65bfc968-2dba-408b-ba85-544595f0bc82)|
+|![2024-09-17_-_10-47-55](https://github.com/user-attachments/assets/09b0b1d5-aa70-49c4-a71d-55634038cb06)|![2024-09-17_-_10-50-07](https://github.com/user-attachments/assets/1918dbb9-495a-41a5-b7fc-bf9c4640811b)|
 |-|-|
+
+check Releases before build.
+
+build:
 
 fakeroot ./debian/rules binary
